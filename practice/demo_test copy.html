@@ -53,6 +53,36 @@
         }
 
         /* Pseudo classes, navigation on hover */
+        nav {
+            background: salmon;
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 20px 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a:visited {
+            color: red;
+        }
+
+        nav a:hover {
+            background: yellow;
+            color: darkgray;
+        }
+
+        
+
 
     </style>
 </head>
@@ -99,10 +129,10 @@
     <!-- Navigation using unordered list element -->
     <nav>
         <ul>
-            <li>Link One</li>
-            <li>Link Two</li>
-            <li>Link Three</li>
-            <li>Link Four</li>
+            <li><a href="#">Link One</a></li>
+            <li><a href="#">Link Two</a></li>
+            <li><a href="#">Link Three</a></li>
+            <li><a href="#">Link Four</a></li>
         </ul>
     </nav>
     <!-- Paragraph pirate/cupcake classes -->
