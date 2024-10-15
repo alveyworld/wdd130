@@ -1,0 +1,47 @@
+@font-face {
+    font-family: kidstuff;
+    src: url(kindergarten.ttf);
+}
+
+body {
+    background: lightgrey;
+}
+
+.qbox1, .qbox2, .qbox3 {
+    box-sizing: border-box;
+}
+
+.qbox1 {
+    margin: 20px;
+    border: 15px solid black;
+    padding: 10px 15px;
+    width: 500px;
+    background: white;
+    border-radius: 20px;
+    font-family: 'Tangerine', serif;
+    font-size: 40px;
+}
+
+.qbox2 {
+    margin: 20px;
+    border: 25px dotted royalblue;
+    padding: 20px 35px;
+    width: 500px;
+    background: lightpink;
+    border-radius: 90px;
+    font-family: 'kidstuff';
+    font-size: 50px;
+}
+
+.qbox3 {
+    margin: 20px;
+    border: 35px solid darkred;
+    padding: 50px;
+    width: 500px;
+    background: tan;
+    border-radius: 45px;
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
