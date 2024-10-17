@@ -3,28 +3,78 @@
 <head><title>My Page</title>
 <style>
     body {
-        background: #37a2db;
+        background: linear-gradient(#483c46, #3c6e71);
+        height: 1000px;
+    }
+    #wrapper {
+        width: 900px;
+        margin: 50px auto;
+        background: #70ae6e;
+        padding: 30px;
+        border-radius: 25px;
     }
     #profile {
         width: 300px;
         border: 10px solid #6e122b;
     }
-    a {
-        font-size: 2em;
+    nav {
+        background: #3c6e71;
+        padding: 0px;
+        border-radius: 25px;
+        border: 15px solid #beee62;
+    }
+    nav a {
+        font-size: 1em;
         display: block;
     }
+    nav li {
+        display: inline-block;
+        width: 200px;
+        text-align: center;
+        margin: 20px 0 20px 0;
+    }
+    nav li img {
+        border: 10px solid #f4743b;
+        border-radius: 160px;
+        width: 70px;
+        height: 70px;
+    }
+    
 </style>
 </head>
 <body>
+    <div id="wrapper">
+        <header>
+            <h1>Brother Alvey's Landing Page</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <img src="images/orangeraft.png">
+                    <a href="wwr/index.html">Rafting Website</a>
+                </li>
+                <li>
+                    <img src="images/kermit.png">
+                    <a href="wwr/site-plan-rafting.html">Rafting Plan</a>
+                </li>
+                <li>
+                    <img src="images/kermit.png">
+                    <a href="practice/css_demo/demo_test.html">CSS Demo</a>
+                </li>
+                <li>
+                    <img src="images/kermit.png">
+                    <a href="practice/section03/boxmodel.html">S3 Boxmodel</a>
+                </li>
+                <li>
+                    <img src="images/kermit.png">
+                    <a href="practice/section06/boxmodel.html">S6 Boxmodel</a>
+                </li>
+            </ul>
+        </nav>
+        
+        
     
-    <h1>Brother Alvey's Landing Page</h1>
-    <img id="profile" src="images/kermitSig.png" alt="Kermit Signature">
-
-    <a href="wwr/index.html">Rafting Website</a>
-    <a href="wwr/site-plan-rafting.html">Rafting Plan</a>
-    <a href="practice/css_demo/demo_test.html">CSS Demo</a>
-    <a href="practice/section03/boxmodel.html">Section 3 Boxmodel</a>
-    <a href="practice/section06/boxmodel.html">Section 6 Boxmodel</a>
+    </div>
     
     
 </body>
