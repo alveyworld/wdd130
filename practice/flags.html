@@ -37,7 +37,6 @@
             width: 70px;  
             aspect-ratio: 1;
             background: white;
-            
             clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
         }
 
@@ -54,13 +53,44 @@
         #dred1, #dred2, #dred3, #dred4 {
             background: red;
         }
+
+        #finland {
+            display: grid;
+            width: 300px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            background: blue;
+            gap: 45px;
+
+        }
+        #fwhite1, #fwhite2, #fwhite3, #fwhite4 {
+            background: white;
+        }
+
+        #benin {
+            display: grid;
+            width: 300px;
+            grid-template-columns: 1.3fr 1.8fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+        }
+        #bgreen {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            background: green;
+
+        }
+        #byellow {
+            background: yellow;
+        }
+        #bred {
+            background: red;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Create the Chile flag-->
-
-    
     <div id="chile">
         <div id="blue">
             <div class="star"></div>
@@ -69,11 +99,28 @@
         <div id="red"></div>
     </div>
     <hr>
+
     <div id="denmark">
         <div id="dred1"></div>
         <div id="dred2"></div>
         <div id="dred3"></div>
         <div id="dred4"></div>
+    </div>
+
+    <hr>
+
+    <div id="finland">
+        <div id="fwhite1"></div>
+        <div id="fwhite2"></div>
+        <div id="fwhite3"></div>
+        <div id="fwhite4"></div>
+    </div>
+    <hr>
+
+    <div id="benin">
+        <div id="bgreen"></div>
+        <div id="byellow"></div>
+        <div id="bred"></div>
     </div>
 
 </body>
