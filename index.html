@@ -1,114 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><title>My Page</title>
-<style>
-    * {
-        margin:0;
-    }
-    @font-face {
-        font-family: silly;
-        src: url("images/Cute\ Notes.ttf");
-    }
-    @font-face {
-        font-family: kid;
-        src: url("images/KIdDOS-Regular.ttf");
-    }
-    body {
-        background: linear-gradient(white, #5a6ed1);
-        height: 100%;
-    }
-    #wrapper {
-        width: 900px;
-        margin: 50px auto;
-        background: #5a6ed1;
-        padding: 30px;
-        border-radius: 25px;
-        box-shadow: 0px 2px 5px #000;
-        transform: rotate(-2deg);
-        text-align: center;
-    }
-    #profile {
-        width: 300px;
-        border: 10px solid #6e122b;
-    }
-    nav {
-        background: linear-gradient(white, #a4e191); ;
-        padding: 0px;
-        border-radius: 5px;
-        border: 7px solid black;
-        border-top-color: #257a78;
-        border-top-style: dashed;
-        border-top-width: 3px;
-        transform: rotate(3deg);
-        box-shadow: 17px 17px 7px #6e122b;
-        text-align: left;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        
-    }
-    nav ul {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr) ;
-        grid-template-rows: 1fr 1fr;
-    }
-    nav a {
-        font-size: 1.5em;
-        font-family: 'kid', sans-serif;
-        text-decoration: none;
-        color: #257a78;
-    }
-    nav a:hover > .chalk{
-        color: #9b525a;
-        border-color: #9b525a;
-    }
-    nav li {
-        display: inline-block;
-    }
-    nav li img {
-        border: 7px solid white;
-        border-radius: 160px;
-        width: 70px;
-        height: 70px;
-        display: block;
-    }
-    header {
-        text-align: center;
-        margin: 0 0 20px 0;
-    }
-    header h1 {
-        color: white;
-        font-family: 'silly';
-        font-size: 64px;      
-    }
-    main {
-        margin-top: 30px;
-        font-family: kid;
-        font-size: 2em;
-        color: white;
-        text-align: left;
-    }
-
-    #left_side {
-        float: left;
-        width: 400px;
-    }
-    #right_side {
-        float: right;
-        width: 470px;
-    }
-
-    #ad {
-        width: 200px;
-        height: 100px;
-        background: pink;
-        position: fixed;
-        z-index: 5;
-        top: 300px;
-        left: 300px;
-        display: none;
-    }
-    
-</style>
+<link href="style1.css" rel="stylesheet">
 </head>
 <body>
     <div id="ad">Free Laptop! 
@@ -180,7 +73,7 @@
             </div>
         </main>
         
-        <div style="clear: both;"></div>
+        <div id="footer" style="clear: both;"></div>
         
     </div>
     

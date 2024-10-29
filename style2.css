@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2f 4fr 1fr;
+}
+
