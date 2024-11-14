@@ -3,9 +3,39 @@
     padding: 0;
 }
 
-#wrapper{
+#wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2f 4fr 1fr;
+    grid-template-rows: 50px 2fr 4fr 1fr;
 }
 
+h1 {
+    color: white;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+nav li {
+    margin: 15%;
+    height: 90%;
+    width: 90%;
+    border-radius: 20px;
+    background: white;
+    border: 2px black solid;
+    overflow: hidden;
+
+}
+
+nav li img {
+    width: 300px;
+    height: 200px;
+}
+
+.base {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
