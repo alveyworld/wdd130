@@ -1,12 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;  
 }
 
 #wrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 2fr 4fr 1fr;
+    grid-template-rows: 50px 2fr 2fr 1fr;
+    background: black;
 }
 
 h1 {
@@ -16,26 +17,53 @@ h1 {
 nav ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-
 }
 
 nav li {
-    margin: 15%;
-    height: 90%;
-    width: 90%;
-    border-radius: 20px;
+    margin: 10px;
+    height: 630px;
+    width: 320px;
     background: white;
-    border: 2px black solid;
+    border-radius: 20px;
+    border: 2px white solid;
     overflow: hidden;
+
+    display: grid;
+    grid-template-rows: 210px 325px 95px;
 
 }
 
+.middle {
+    text-align: center;
+    width: 320px;
+}
+.middle h3 {
+    margin: 20px;
+    font-size: 25px;
+}
+
 nav li img {
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 210px;
+    margin-left: -17px;
 }
 
 .base {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background: darkolivegreen;
+    width: 320px;
+    align-items: center;
+}
+
+.base div {
+    text-align: center;
+    padding: 10%;
+    
+    
+}
+
+.base div.between {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
 }
