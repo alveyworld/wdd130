@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function handleSubmit(event) 
+        {
+            event.preventDefault();
+
+            const firstName = document.getElementById('firstName').value;
+
+            alert(`First Name: ${firstName}`);
+
+        }
+    </script>
 </head>
 <body>
-    <form>
-        <label for="firstName">First Name</label>
-        <input type="text" id="firstName" name="firstName" required>
-        <br><br>
+    <form action="#" onsubmit="handleSubmit(event)">
+<label for="firstName">First Name</label>
+<input type="text" id="firstName" name="firstName" required>
+<br><br>
 <label for="lastName">Last Name</label>
 <input type="text" id="lastName" name="lastName" required>
 <br><br>
