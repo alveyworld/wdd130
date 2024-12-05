@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball Card</title>
+    <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 300px;
+    height: 450px;
+    background: repeating-linear-gradient(
+        -45deg,
+        #0033cc,
+        #0033cc 10px,
+        #000066 10px,
+        #000066 20px
+    );
+    border: 5px solid #0033cc;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.header {
+    background: #ff3333;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.image-container {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge {
+    background: #007bff;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    top: 65%;
+    left: 20px;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    text-transform: uppercase;
+}
+
+.footer {
+    background: #ff3333;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.footer .player-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.footer .player-position {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+  </style>
+  </head>
+<body>
+    <div class="card">
+        <div class="header">
+            <span>Donruss '86</span>
+        </div>
+        <div class="image-container">
+            <img src="path_to_image.jpg" alt="Jose Canseco">
+        </div>
+        <div class="badge">
+            <span>RATED ROOKIE</span>
+        </div>
+        <div class="footer">
+            <div class="player-name">JOSE CANSECO</div>
+            <div class="player-position">OF</div>
+        </div>
+    </div>
+</body>
+</html>

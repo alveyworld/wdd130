@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Card</title>
+  <style>
+    /* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  position: relative;
+  background: repeating-linear-gradient(
+    -45deg,              /* Angle of the stripes */
+    #fff,            /* Green background */
+    #fff 10px,       /* Width of the green stripe */
+    #007f33 10px,       /* White stripe starts */
+    #007f33 50px        /* Total stripe size (green + white) */
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-border {
+  width: 91%;
+  height: 94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.player-section {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe600;
+  border: 5px solid #000; /* Black border around player image */
+}
+
+.player-placeholder {
+  width: 90%;
+  height: 90%;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  border: 3px solid #000;
+}
+
+.player-placeholder::before {
+  content: "PLAYER IMAGE";
+}
+
+.info-section {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  text-align: left;
+  background-color: #ffe600; /* Yellow background for info section */
+  border-top: 5px solid #000;
+}
+
+.team-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #003c8f;
+  text-transform: uppercase;
+}
+
+.player-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d32f2f;
+  text-transform: uppercase;
+}
+
+.player-position {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-border">
+      <div class="player-section">
+        <div class="player-placeholder">
+          <!-- Placeholder for the player image -->
+        </div>
+      </div>
+      <div class="info-section">
+        <div class="team-name">49ERS</div>
+        <div class="player-name">JERRY RICE</div>
+        <div class="player-position">WR</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

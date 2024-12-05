@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baseball Card</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+    .card {
+      width: 300px;
+      height: 420px;
+      border: 5px solid #fff;
+      position: relative;
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+    }
+    .rounded-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 8px solid #fcd303;
+      border-radius: 20px;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .header {
+      background-color: #008037;
+      color: #fff;
+      text-align: center;
+      padding: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      position: relative;
+      border-radius: 10px 10px 0 0;
+    }
+    .header::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #008037;
+    }
+    .header span {
+      display: block;
+    }
+    .placeholder {
+      width: calc(100% - 20px);
+      height: 250px;
+      margin: 0 auto;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      color: #666;
+      border: 3px solid #fff;
+      z-index: 2;
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+      z-index: 2;
+    }
+    .footer .name {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .footer .team {
+      background-color: #008037;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+    .flag {
+      position: absolute;
+      height: 30px;
+      width: 100%;
+      background-color: #008037;
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+      font-weight: bold;
+      z-index: 2;
+    }
+    .flag.top {
+      top: 0;
+      border-radius: 10px 10px 0 0;
+    }
+    .flag.bottom {
+      bottom: 0;
+      border-radius: 0 0 10px 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="flag top">OAKLAND SHORTSTOP</div>
+    <div class="rounded-border"></div>
+    <div class="placeholder">Player Image</div>
+    <div class="footer">
+      <div class="name">BERT CAMPANERIS</div>
+      <div class="team">A's</div>
+    </div>
+    <div class="flag bottom">A's</div>
+  </div>
+</body>
+</html>
