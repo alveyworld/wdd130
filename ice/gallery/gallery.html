@@ -9,7 +9,7 @@
             background: black;
         }
         #wrapper{
-            width: 800px;
+            width: 600px;
             margin: 0 auto;
         }
         nav {
@@ -19,7 +19,7 @@
         }
         #gallery{
             display: grid;
-            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-columns: 200px 200px 200px;
             border: 15px solid rgb(255, 255, 255);
             width: 100%;
             background-color: #ddd;
@@ -36,8 +36,11 @@
             cursor: url('images/christus.png'), pointer;
         }
         #gallery img {
-            width: 200px;
+            /* make a thumbnail of the image that is 200x300 
+               instead of using width and height here to help the page load faster */
+            width: 200px; 
             height: 300px;
+
             opacity:50%;
             display:block;
         }
@@ -54,17 +57,11 @@
         <main>
             <div id="gallery">
                 <a href="images/big/img1.png"><img src="images/big/img1.png" alt="huge file size" ></a>
-                <a href="images/big/img2.png"><img src="images/small/img2.jpg" alt="huge file size" ></a>
+                <a href="images/big/img2.png"><img src="images/big/img2.png" alt="huge file size" ></a>
                 <a href="images/big/img3.png"><img src="images/big/img3.png" alt="huge file size" ></a>
                 <a href="images/big/img4.png"><img src="images/big/img4.png" alt="huge file size" ></a>
                 <a href="images/big/img5.png"><img src="images/big/img5.png" alt="huge file size" ></a>
                 <a href="images/big/img6.png"><img src="images/big/img6.png" alt="huge file size" ></a>
-                <a href="images/big/img7.png"><img src="images/big/img7.png" alt="huge file size" ></a>
-                <a href="images/big/img8.png"><img src="images/big/img8.png" alt="huge file size" ></a>
-                <a href="images/big/img9.png"><img src="images/big/img9.png" alt="huge file size" ></a>
-                <a href="images/big/img10.png"><img src="images/big/img10.png" alt="huge file size" ></a>
-                <a href="images/big/img11.png"><img src="images/big/img11.png" alt="huge file size" ></a>
-                <a href="images/big/img12.png"><img src="images/big/img12.png" alt="huge file size" ></a>
             </div>
         </main>
     </div>
