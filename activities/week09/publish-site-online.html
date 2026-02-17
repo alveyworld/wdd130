@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Github Desktop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/prism-light.css" />
+    <link rel="stylesheet" href="../../css/course.css" />
+</head>
+
+<body>
+    <div id="content">
+        <header class="headerBanner">
+            <div>
+                <h1>
+                    <span>WEB</span> Fundamentals</h1>
+                <h2>WDD 130</h2>
+            </div>
+        </header>
+        <main>
+            <h1>Publish You Site on GitHub pages</h1>
+        <hr />
+        <h2><strong>Overview</strong></h2>
+        <ul>
+            <li>Task: Create repository to stor your wdd130 folder on GitHub, then use GitHub Pages to publish your site online.</li>
+            <li>Purpose: To share your web pages online with the teacher and the world</li>
+            <li>Expectation: Everyone will have a url to their web pages hosted on GitHub Pages.</li>
+          </ul>
+        
+        <h2><strong>Instructions</strong></h2>
+        <ol class="bigSteps">
+          <li>
+            <!-- START STEP -->
+            <h2>Step 1: Prepare </h2><br>
+            <ul style="list-style-type: '&#9989;';">
+                <li>You should have a folder on your computer called "wdd130" that contains all your work. <br>
+                    There must be a file called index.html in that folder. <br>
+                    Here is the way your folders should be setup:<br>
+                    <img src="../../images/folder_setup.png" alt="wdd130 folder setup"></li>
+                <li>You should have a GitHub account and know the username and password</li>
+                <li>You should have the GitHub desktop program installed and connected to your GitHub account</li>
+            </ul>
+        </p>
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Step 2: Create the Repository </h2><br>
+            
+            <ul>
+                <li><svg style="background: #762E9C; border-radius: 10px; padding: 5px;" viewBox="0 0 92 92" width="50" height="50  " fill="#E7E9EC" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m46.1 0c-25.5 0-46.1 20.6-46.1 46.1 0 20.4 13.2 37.7 31.5 43.8 2.3.4 3.2-1 3.2-2.2 0-1.1-.1-4.7-.1-8.6-11.6 2.1-14.6-2.8-15.5-5.4-.5-1.3-2.8-5.4-4.7-6.5-1.6-.9-3.9-3-.1-3.1 3.6-.1 6.2 3.3 7.1 4.7 4.2 7 10.8 5 13.4 3.8.4-3 1.6-5 2.9-6.2-10.3-1.2-21-5.1-21-22.8 0-5 1.8-9.2 4.7-12.4-.5-1.2-2.1-5.9.5-12.2 0 0 3.9-1.2 12.7 4.7 3.7-1 7.6-1.6 11.5-1.6s7.8.5 11.5 1.6c8.8-6 12.7-4.7 12.7-4.7 2.5 6.3.9 11.1.5 12.2 2.9 3.2 4.7 7.3 4.7 12.4 0 17.7-10.8 21.6-21.1 22.8 1.7 1.4 3.1 4.2 3.1 8.5 0 6.2-.1 11.1-.1 12.7 0 1.2.9 2.7 3.2 2.2 18.2-6.1 31.4-23.4 31.4-43.8.3-25.4-20.4-46-45.9-46z"/>
+                </svg>
+                Open <strong>GitHub Desktop</strong> on your computer</li>
+                <li>Choose <strong>File -> New repository...</strong></li>
+                <li>Name the repository "wdd130" and for the local path choose the folder that contains your wdd130 folder (Don't choose your wdd130 folder!)
+                    <br><img src="../../images/CreateRepoGitHubDesktop.png" width="400" alt="GitHub desktop create repository">
+                    <br>Double check the path at the bottom to be the path of your wdd130 folder.
+                </li>
+                <li>
+                    Click <strong>Create Repository</strong>
+                </li>
+            </ul>
+        </p>
+            <!-- END STEP -->
+          </li>
+          
+          <li>
+            <!-- START STEP -->
+            <h2>Step 3: Publish Repository  </h2><br>
+            <ul>
+                <li>Publish your files to the repository by clicking <strong>Publish repository</strong>
+                    <br><img src="../../images/PublishRepo.png" width="600" alt="GitHub desktop Publish repository">
+                    <br>There may be multiple places where you can click to publish.
+                </li>
+                <li>Make sure to uncheck the private box (it will be a public repository)
+                    <img src="../../images/PublishRepo2.png" width="400" alt="GitHub desktop Publish public repository">
+                </li>        
+            </ul>
+            
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Step 4: Host on GitHub Pages  </h2><br>
+            <ul>
+                <li>Go to your new repository online by clicking <strong>View on GitHub</strong>
+                    <br><img src="../../images/ViewonGitHub.png" width="600" alt="GitHub desktop Publish repository">
+                    <br><small>Note: The other buttons are super useful as well, one takes you to VS Code and the other takes you to the files on your computer</small>
+                </li>
+                <li>It should take you to github.com/yourusername/wdd130 and it should look similar to the image below. Click
+                    on the <strong>Settings</strong> tab.
+                    <img src="../../images/RepoSettings.png" width="800" alt="GitHub online repo and settings">
+                </li>
+                <li>In the setting menu click <strong>Pages</strong>, then change the Branch to from None to main and then click Save.<br>
+                    <img src="../../images/PagesMainInitialize.png" width="600" alt="GitHub Pages Initialize main root"><br>
+                    This will tell GitHub to host the files in your repository as a webserver. It may take a few minutes.
+                </li>
+                <li>To see the status of this process you can click the <strong>Actions</strong> tab. The little circle will spin while it 
+                is working and it will turn to a green check when it is finished.
+                <img src="../../images/ActionsIndicator.gif" width="600" alt="Actions completion indicator "></li>     
+                <li>Once GitHub Pages has completed initialize your server, click the <strong>Code</strong> tab to view the repository files. 
+                    Then click the gear icon in the About section.<br>
+                <img src="../../images/CodeAbout.png" width="800" alt="Code tab About settings"></li>
+                <li>Check the box that says <strong>Use your GitHub Pages website</strong>! This will display the URL of your website
+                    hosted online for the whole world to see. Then click Save Changes and it will display the URL of your site in the About
+                    section. Click the URL to test that your pages are being hosted properly. It will look for and display your index.html.
+                <img src="../../images/AboutShowWebUrl.png" width="500" alt="Code tab About settings"><br>
+            <img src="../../images/YourURLabout.png" width="900" alt="Code tab About URL"></li>      
+            </ul>
+            
+            <!-- END STEP -->
+          </li>
+          <li>
+            <!-- START STEP -->
+            <h2>Submit</h2><br>
+            Submit the URL of your website hosted on GitHub pages (i.e. https://yourusername.github.io/wdd130/).
+            <!-- END STEP -->
+          </li>
+          
+          </ol>
+
+      
+
+        </main>
+        <script src="../../js/course.js"></script>
+        <script src="../../js/prism.js"></script>
+    </div>
+</body>
+
+</html>
