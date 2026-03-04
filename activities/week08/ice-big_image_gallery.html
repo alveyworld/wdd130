@@ -51,31 +51,40 @@
             <ul>
               <li>
               <h3>Open in a browser</h3>Test the gallery.html file by opening it in a browser like Chrome.
-              Hold the shift key and click the browser's refresh button. 
-              What do you notice about how the images load?
+              Hold the shift key and click the browser's refresh button. What do you notice about how the images load?<br>
+              Turn on the "Inspect element" feature of your 
+              browser and choose the "Network" tab, shift-refresh again and see how many seconds it takes to load the images
+              for the page. Do you notice a problem?
               </li>
             </ul>
-
-            
             <!-- END STEP -->
           </li>
           <li>
             <!-- START STEP -->
             <h2>Optimize the images</h2>
             <ul>
-              <li>
-              <h3>Create smaller thumbnail images</h3>
-              Change the image size of the big images using a photo editor like Photoshop 
+              <li>To optimize images you will need to use a photo editor like Photoshop 
               (Adobe Express is available to all byui students) or 
-              an online editor like <a href="https://www.photopea.com/">Photopea</a>.
-              Then save the smaller thumbnail files to the images/small folder.
-              </li>
+              an online editor like <a href="https://www.photopea.com/">Photopea</a></li>
               <li>
               <h3>Shrink the file size</h3>
-              Optimize the big images using the same photo editor. Maintain the deminsions of the
-              files (1950px by 2915px), but try to shrink the number of bytes it takes to store the images. 
-              Using a different file type is acceptable (ie. png->jpg).
-              Then override the images in the big folder with the optimized images and update the links.
+              Optimize the images in the big folder using a photo editor. Maintain the resolution of the
+              images (1950px by 2915px), but try to shrink the number of bytes it takes to store the images. 
+              This can be done by lowering the quality of the PNG image file or changing it to another web image type like JPG, GIF,
+              or webP that optimize images. Then override or replace the images in the big folder with the optimized
+              images and update the links.
+                <br>Example: <br>
+                given img1.png -> 10MB
+                <br>
+                         optimized img1.jpg -> 895KB
+              </li>
+              <li>
+              <h3>Create smaller thumbnail images</h3>
+              Next optimize the page loading by creating separate thumbnail sized versions of the 
+              images. Open the big files in a photo editor and find a way to change the resolution of the
+              images to the size defined in the css code (200px by 300px). This is usually done with an "Image Size" 
+              menu option of a photo editor.
+              Then save the smaller thumbnail sized files to the small folder in images.
               </li>
             </ul>
 
@@ -88,8 +97,8 @@
             <ul>
               <li>
               <h3>Use the thumbnails</h3>
-              Change the src attribute of each image to point to the small thumbnail 
-              versions of the images. Keep the link to the big images.
+              Change the <b>src</b> attribute of each image tag to point to the small thumbnail 
+              versions of the images. The <b>href</b> attribute of the link tag should point to the optimized big images.
               </li>
             </ul>
 
@@ -100,7 +109,8 @@
           <li>
           <!-- START STEP -->
           <h2>Submit</h2>
-            <p>Compress the gallery folder and submit the zip file</p>
+            <p>Compress the gallery folder and submit the zip file. <br>
+            Note: If you optimized the files properly your new zip file should be less than 30MB</p>
           <!-- END STEP  -->
         </li>
 
